@@ -112,12 +112,15 @@ body {
 .nav-border {
     border-left: solid 1px $light_grey;
 }
-.general {
+.section {
     margin: 17px;
     background-color: $white;
 }
-.line {
-    border-bottom: solid 1px $light_grey;
+.section-line {
+    border-bottom: solid 1px $bg;
+}
+.section-head {
+    padding: 20px 20px;
 }
 .icon {
     height: 15px;
