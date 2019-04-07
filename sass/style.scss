@@ -80,8 +80,28 @@ body {
     }
 }   
 .nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
     height: 50px;
     background-color: $white;
+}
+.nav-padding {
+    padding: 10px 10px 15px 10px;
+}
+.nav-person {
+    color: $blue;
+}
+.nav-money {
+    display: flex;
+    flex-direction: row;
+    p {
+        margin: 0;
+        padding: 0 15px 0 10px;
+    }
+}
+.nav-border {
+    border-left: solid 1px $light_grey;
 }
 .general {
     margin: 17px;
