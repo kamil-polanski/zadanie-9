@@ -1,6 +1,8 @@
 @import "variables";
+
 body {
     margin: 0 auto;
+    background-color: $bg;
 }
 
 .row::before,
@@ -62,7 +64,33 @@ body {
 .sidebar {
     background-color: $dark_grey;
     color: $light_grey;
+    
+    ul{
+        padding: 0;
         li {
             list-style-type: none;
+            padding: 15px 15px;
+            
+            &:hover {
+                background-color: $light_grey_side;
+                border-left: 5px solid $orange;
+                color: $white;
+            }
         }
+    }
+}   
+.nav {
+    height: 50px;
+    background-color: $white;
+}
+.general {
+    margin: 17px;
+    background-color: $white;
+}
+.line {
+    border-bottom: solid 1px $light_grey;
+}
+.icon {
+    height: 15px;
+    width: 15px;
 }
