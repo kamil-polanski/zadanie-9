@@ -89,8 +89,17 @@ body {
 .nav-padding {
     padding: 10px 10px 15px 10px;
 }
+.nav-padding-quit {
+    padding: 10px 25px 15px;
+}
 .nav-person {
+    display: flex;
+    flex-direction: row;
     color: $blue;
+    p {
+        margin: 0;
+        padding: 0 15px 0 10px;
+    }
 }
 .nav-money {
     display: flex;
