@@ -7,3 +7,23 @@ $green: #59B66D;
 $light_grey: #ACACAC;
 $white: #fff;
 
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    color: $light_grey;
+}
+.btn {
+    background-color: $orange;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.btn-refresh {
+    height: 40px;
+    width: 40px;
+}
+.section-shadow {
+    box-shadow: 1px 1px 10px $light_grey;
+}
