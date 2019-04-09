@@ -5,10 +5,7 @@ body {
     background-color: $bg;
 }
 /*grid*/
-.row {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
 .row::before,
 .row::after {
     content: " "; /* 1 */
@@ -208,5 +205,27 @@ body {
     display: flex;
     align-items: center;
     padding: 0 10px;
+}
+.section-numbers {
+    padding: 30px 0;
+    .section-numbers-left {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+        padding-bottom:8px;
+        margin-bottom: 25px;
+    }
+    .section-numbers-right {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        padding-bottom:8px;
+        margin-bottom: 25px;
+    }
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 

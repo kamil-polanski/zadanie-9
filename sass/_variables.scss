@@ -17,6 +17,8 @@ h3 {
     font-size: 20px;
     font-weight: bold;
     color: $light_grey;
+    margin: 0;
+    padding: 0;
 }
 h4 {
     text-transform: uppercase;
@@ -34,4 +36,8 @@ h4 {
 }
 .section-shadow {
     box-shadow: 1px 1px 10px $light_grey;
+}
+p {
+    padding: 0;
+    margin: 0;
 }
