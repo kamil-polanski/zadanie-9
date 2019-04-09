@@ -4,7 +4,11 @@ body {
     margin: 0 auto;
     background-color: $bg;
 }
-
+/*grid*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 .row::before,
 .row::after {
     content: " "; /* 1 */
@@ -14,7 +18,7 @@ body {
     clear: both;
 }
 
-/*grid*/
+
 [class*='col-'] {
 	float: left;
     Min-height: 1px;
@@ -22,47 +26,81 @@ body {
 * {
     box-sizing: border-box;
 }
-.col-1 {width: 6.66%;}
-.col-2 {width: 13.33%;}
-.col-3 {width: 20%;}
-.col-4 {width: 26.66%;}
-.col-5 {width: 33.33%;}
-.col-6 {width: 40%;}
-.col-7 {width: 46.66%;}
-.col-8 {width: 53.33%;}
-.col-9 {width: 60%;}
-.col-10 {width: 66.66%;}
-.col-11 {width: 73.33%;}
-.col-12 {width: 80%;}
-.col-13 {width: 86.66%;}
-.col-14 {width: 93.33%;}
-.col-15 {width: 100%;}
-
-
+.col-1 {
+    flex: 0 0 8.33333%;
+    width: 8.33%;
+}
+.col-2 {
+    flex: 0 0 16.66%;
+    width: 16.66%;
+}
+.col-3 {
+    flex: 0 0 25%;
+    width: 25%;
+}
+.col-4 {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+}
+.col-5 {
+    flex: 0 0 41.66%;
+    width: 41.66%;
+}
+.col-6 {
+    flex: 0 0 50%;
+    width: 50%;
+}
+.col-7 {
+    flex: 0 0 58.33%;
+    width: 58.33%;
+}
+.col-8 {
+    flex: 0 0 66.66%;
+    width: 66.66%;
+}
+.col-9 {
+    flex: 0 0 75%;
+    width: 75%;
+}
+.col-10 {
+    flex: 0 0 83.33%;
+    width: 83.33%;
+}
+.col-11 {
+    flex: 0 0 91.66%;
+    width: 91.66%;
+}
+.col-12 {
+    flex: 0 0 100%;
+    width: 100%;
+}
 
 
 .col-offset-0 {margin-left: 0;}
-.col-offset-1 {margin-left: 6.66%;}
-.col-offset-2 {margin-left: 13.33%;}
-.col-offset-3 {margin-left: 20%;}
-.col-offset-4 {margin-left: 26.66%;}
-.col-offset-5 {margin-left: 33.33%;}
-.col-offset-6 {margin-left: 40%;}
-.col-offset-7 {margin-left: 46.66%;}
-.col-offset-8 {margin-left: 53.33%;}
-.col-offset-9 {margin-left: 60%;}
-.col-offset-10 {margin-left: 66.66%;}
-.col-offset-11 {margin-left: 73.33%;}
-.col-offset-12 {margin-left: 80%;}
-.col-offset-13 {margin-left: 86.66%;}
-.col-offset-14 {margin-left: 93.33%;}
-.col-offset-15 {margin-left: 91.66%;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
 
 .container {
     max-width:1280px;
     width: 100%;
     margin: 0 auto;
 }
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+//end of grid
+
 .sidebar {
     background-color: $dark_grey;
     color: $light_grey;
@@ -96,7 +134,7 @@ body {
     }
 }   
 .sidebar-2 {
-    padding-left: 15px;
+    padding: 0 15px;
 }
 
 .nav {
