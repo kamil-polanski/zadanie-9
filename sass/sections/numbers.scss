@@ -1,0 +1,19 @@
+@import "../variables";
+
+.section-numbers {
+    padding: 30px 0;
+    .section-numbers-left {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+        padding-bottom:8px;
+        margin-bottom: 25px;
+    }
+    .section-numbers-right {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        padding-bottom:8px;
+        margin-bottom: 25px;
+    }
+}

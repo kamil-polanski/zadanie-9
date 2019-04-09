@@ -1,8 +1,9 @@
 @import "variables";
+@import "components/components";
+@import "sections/sidebar";
 @import "sections/nav";
 @import "sections/date";
-@import "sections/sidebar";
-@import "components/components";
+@import "sections/numbers";
 
 body {
     margin: 0 auto;
@@ -103,8 +104,6 @@ body {
 
 //end of grid
 
-
-
 .section {
     margin: 17px;
     background-color: $white;
@@ -114,25 +113,6 @@ body {
 }
 .section-head {
     padding: 20px 20px;
-}
-
-
-.section-numbers {
-    padding: 30px 0;
-    .section-numbers-left {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 20px;
-        padding-bottom:8px;
-        margin-bottom: 25px;
-    }
-    .section-numbers-right {
-        display: flex;
-        justify-content: space-between;
-        margin-left: 20px;
-        padding-bottom:8px;
-        margin-bottom: 25px;
-    }
 }
 .flex-row{
     display: flex;
