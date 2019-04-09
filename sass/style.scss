@@ -1,9 +1,14 @@
 @import "variables";
+@import "sections/nav";
+@import "sections/date";
+@import "sections/sidebar";
+@import "components/components";
 
 body {
     margin: 0 auto;
     background-color: $bg;
 }
+
 /*grid*/
 
 .row::before,
@@ -98,75 +103,8 @@ body {
 
 //end of grid
 
-.sidebar {
-    background-color: $dark_grey;
-    color: $light_grey;
-    ul{
-        padding: 0 0 15px 0; 
-      
-        li {
-            display: flex;
-            list-style-type: none;
-            flex-direction: row;
-            padding: 15px 0;
-            &:hover {
-                background-color: $light_grey_side;
-                border-left: 5px solid $orange;
-                color: $white;
-                cursor: pointer;
-            }
-            &:hover .icon {
-                fill: $white;
-            }
-            div {
-                padding-left: 15px;
-                display: flex;
-                p{
-                    margin: 0;
-                    padding-left: 5px;
-                    flex-direction: row;
-                }
-            }
-        }
-    }
-}   
-.sidebar-2 {
-    padding: 0 15px;
-}
 
-.nav {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
-    height: 50px;
-    background-color: $white;
-}
-.nav-padding {
-    padding: 10px 10px 15px 10px;
-}
-.nav-padding-quit {
-    padding: 10px 25px 15px;
-}
-.nav-person {
-    display: flex;
-    flex-direction: row;
-    color: $blue;
-    p {
-        margin: 0;
-        padding: 0 15px 0 10px;
-    }
-}
-.nav-money {
-    display: flex;
-    flex-direction: row;
-    p {
-        margin: 0;
-        padding: 0 15px 0 10px;
-    }
-}
-.nav-border {
-    border-left: solid 1px $light_grey;
-}
+
 .section {
     margin: 17px;
     background-color: $white;
@@ -177,35 +115,8 @@ body {
 .section-head {
     padding: 20px 20px;
 }
-.icon {
-    height: 15px;
-    width: 15px;
-}
-.sidebar-icon {
-    fill: $light_grey;
-}
-.date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 110px;
-}
-.date-form {
-    border: none;
-    &:last-of-type{
-        border-left: 1px solid $light_grey;
-        padding-left: 15px; 
-    }
-}
 
-.date-row {
-    border: 1px solid $light_grey;
-    border-radius: 5px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
+
 .section-numbers {
     padding: 30px 0;
     .section-numbers-left {

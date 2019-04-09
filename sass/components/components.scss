@@ -1,0 +1,19 @@
+@import "../variables";
+.icon {
+    height: 15px;
+    width: 15px;
+}
+.sidebar-icon {
+    fill: $light_grey;
+}
+.btn {
+    background-color: $orange;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.btn-refresh {
+    height: 40px;
+    width: 40px;
+}

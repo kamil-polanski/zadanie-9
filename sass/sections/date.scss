@@ -1,0 +1,24 @@
+@import "../variables";
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+.date-form {
+    border: none;
+    &:last-of-type{
+        border-left: 1px solid $light_grey;
+        padding-left: 15px; 
+    }
+}
+
+.date-row {
+    border: 1px solid $light_grey;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}

@@ -1,0 +1,37 @@
+@import "../variables";
+
+.sidebar {
+    background-color: $dark_grey;
+    color: $light_grey;
+    ul{
+        padding: 0 0 15px 0; 
+      
+        li {
+            display: flex;
+            list-style-type: none;
+            flex-direction: row;
+            padding: 15px 0;
+            &:hover {
+                background-color: $light_grey_side;
+                border-left: 5px solid $orange;
+                color: $white;
+                cursor: pointer;
+            }
+            &:hover .icon {
+                fill: $white;
+            }
+            div {
+                padding-left: 15px;
+                display: flex;
+                p{
+                    margin: 0;
+                    padding-left: 5px;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}   
+.sidebar-2 {
+    padding: 0 15px;
+}
