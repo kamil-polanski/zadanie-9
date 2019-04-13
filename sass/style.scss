@@ -4,6 +4,7 @@
 @import "sections/nav";
 @import "sections/date";
 @import "sections/numbers";
+@import "utilities/utilities";
 
 body {
     margin: 0 auto;
@@ -104,6 +105,8 @@ body {
 
 //end of grid
 
+
+
 .section {
     margin: 17px;
     background-color: $white;
@@ -114,6 +117,9 @@ body {
 .section-head {
     padding: 20px 20px;
 }
+
+
+
 .flex-row{
     display: flex;
     align-items: center;
