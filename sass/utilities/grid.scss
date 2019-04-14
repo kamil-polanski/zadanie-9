@@ -40,10 +40,35 @@
       width: $width;
     }
   }
-
-@for $i from 1 through 12 {
+  @include respond-to('small') {
+    @for $i from 1 through 12 {
+        .col-s-#{$i} {
+          $width: 100% / 12 * $i;
+          flex: 0 0 $width;
+          width: $width;
+        }
+      }
+  }
+  @include respond-to('medium') {
+    @for $i from 1 through 12 {
+        .col-m-#{$i} {
+          $width: 100% / 12 * $i;
+          flex: 0 0 $width;
+          width: $width;
+        }
+      }
+  }
+  @include respond-to('large') {
+    @for $i from 1 through 12 {
+        .col-l-#{$i} {
+          $width: 100% / 12 * $i;
+          flex: 0 0 $width;
+          width: $width;
+        }
+      }
+  }
+  @for $i from 1 through 12 {
     .col-offset-#{$i} {
       $marin-left: 100% / 12 * $i;
     }
   }
-
