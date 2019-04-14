@@ -1,4 +1,5 @@
 @import "variables";
+@import "utilities/grid";
 @import "components/components";
 @import "sections/sidebar";
 @import "sections/nav";
@@ -10,101 +11,6 @@ body {
     margin: 0 auto;
     background-color: $bg;
 }
-
-/*grid*/
-
-.row::before,
-.row::after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-.row:after {
-    clear: both;
-}
-
-
-[class*='col-'] {
-	float: left;
-    Min-height: 1px;
-}
-* {
-    box-sizing: border-box;
-}
-.col-1 {
-    flex: 0 0 8.33333%;
-    width: 8.33%;
-}
-.col-2 {
-    flex: 0 0 16.66%;
-    width: 16.66%;
-}
-.col-3 {
-    flex: 0 0 25%;
-    width: 25%;
-}
-.col-4 {
-    flex: 0 0 33.33%;
-    width: 33.33%;
-}
-.col-5 {
-    flex: 0 0 41.66%;
-    width: 41.66%;
-}
-.col-6 {
-    flex: 0 0 50%;
-    width: 50%;
-}
-.col-7 {
-    flex: 0 0 58.33%;
-    width: 58.33%;
-}
-.col-8 {
-    flex: 0 0 66.66%;
-    width: 66.66%;
-}
-.col-9 {
-    flex: 0 0 75%;
-    width: 75%;
-}
-.col-10 {
-    flex: 0 0 83.33%;
-    width: 83.33%;
-}
-.col-11 {
-    flex: 0 0 91.66%;
-    width: 91.66%;
-}
-.col-12 {
-    flex: 0 0 100%;
-    width: 100%;
-}
-
-
-.col-offset-0 {margin-left: 0;}
-.col-offset-1 {margin-left: 8.33%;}
-.col-offset-2 {margin-left: 16.66%;}
-.col-offset-3 {margin-left: 25%;}
-.col-offset-4 {margin-left: 33.33%;}
-.col-offset-5 {margin-left: 41.66%;}
-.col-offset-6 {margin-left: 50%;}
-.col-offset-7 {margin-left: 58.33%;}
-.col-offset-8 {margin-left: 66.66%;}
-.col-offset-9 {margin-left: 75%;}
-.col-offset-10 {margin-left: 83.33%;}
-.col-offset-11 {margin-left: 91.66%;}
-
-.container {
-    max-width:1280px;
-    width: 100%;
-    margin: 0 auto;
-}
-.container-fluid {
-    width: 100%;
-    margin: 0 auto;
-}
-
-//end of grid
-
 
 
 .section {
@@ -119,10 +25,4 @@ body {
 }
 
 
-
-.flex-row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
