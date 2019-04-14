@@ -1,3 +1,19 @@
+.container {
+    max-width:1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .row::before,
 .row::after {
     content: " "; /* 1 */
@@ -21,7 +37,13 @@
     .col-#{$i} {
       $width: 100% / 12 * $i;
       flex: 0 0 $width;
-      max-width: $width;
+      width: $width;
+    }
+  }
+
+@for $i from 1 through 12 {
+    .col-offset-#{$i} {
+      $marin-left: 100% / 12 * $i;
     }
   }
 

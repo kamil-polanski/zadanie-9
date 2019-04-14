@@ -7,6 +7,12 @@ $green: #59B66D;
 $light_grey: #ACACAC;
 $white: #fff;
 
+$breakpoints: (
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px
+) !default;
+
 h2 {
     font-size: 20px;
     text-transform: uppercase;
