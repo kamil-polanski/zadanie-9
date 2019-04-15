@@ -8,9 +8,10 @@ $light_grey: #ACACAC;
 $white: #fff;
 
 $breakpoints: (
-  'small':  767px,
-  'medium': 992px,
-  'large':  1200px
+    'xsmall':  ( max-width:  766px ),
+    'small':  ( min-width:  767px ),
+    'medium': ( min-width:  992px ),
+    'large':  ( min-width: 1200px )
 ) !default;
 
 h2 {

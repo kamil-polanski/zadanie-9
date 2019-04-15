@@ -1,74 +1,80 @@
+@import "../mixins";
 .container {
-    max-width:1280px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
 }
 .container-fluid {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.flex-row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.flex-space {
+  display: flex;
+  justify-content: space-between;
 }
 
 .row::before,
 .row::after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 .row:after {
-    clear: both;
+  clear: both;
 }
 
-
-[class*='col-'] {
-	float: left;
-    Min-height: 1px;
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
-@for $i from 1 through 12 {
-    .col-#{$i} {
+@include respond-to("xsmall") {
+  @for $i from 1 through 12 {
+    .col-xs-#{$i} {
       $width: 100% / 12 * $i;
       flex: 0 0 $width;
       width: $width;
     }
   }
-  @include respond-to('small') {
-    @for $i from 1 through 12 {
-        .col-s-#{$i} {
-          $width: 100% / 12 * $i;
-          flex: 0 0 $width;
-          width: $width;
-        }
-      }
-  }
-  @include respond-to('medium') {
-    @for $i from 1 through 12 {
-        .col-m-#{$i} {
-          $width: 100% / 12 * $i;
-          flex: 0 0 $width;
-          width: $width;
-        }
-      }
-  }
-  @include respond-to('large') {
-    @for $i from 1 through 12 {
-        .col-l-#{$i} {
-          $width: 100% / 12 * $i;
-          flex: 0 0 $width;
-          width: $width;
-        }
-      }
-  }
+}
+@include respond-to("small") {
   @for $i from 1 through 12 {
-    .col-offset-#{$i} {
-      $marin-left: 100% / 12 * $i;
+    .col-s-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      width: $width;
     }
   }
+}
+@include respond-to("medium") {
+  @for $i from 1 through 12 {
+    .col-m-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      width: $width;
+    }
+  }
+}
+@include respond-to("large") {
+  @for $i from 1 through 12 {
+    .col-l-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      width: $width;
+    }
+  }
+}
+@for $i from 1 through 12 {
+  .col-offset-#{$i} {
+    $marin-left: 100% / 12 * $i;
+  }
+}
