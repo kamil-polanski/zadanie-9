@@ -1,3 +1,14 @@
+@import "../variables";
+
 .links {
-    float: right;
+  padding: 20px 0;
+  &:hover {
+    background-color: $bg;
+  }
+  &:hover img{
+    visibility: visible;
+  }
+  img {
+    visibility: hidden;
+  }
 }

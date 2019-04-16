@@ -10,13 +10,26 @@
     }
 }
 .btn {
-    background-color: $orange;
     border: none;
-    margin-left: 10px;
     border-radius: 5px;
+}
+.btn-orange {
+    background-color: $orange;
+    color: $white;
+    border: 3px $orange solid;
+    &:hover {
+        border: 3px $orange solid;
+        background-color: $white;
+        color: $orange   
+    }
+}
+.btn-large {
+    margin: 25px 0;
+    padding: 17px;
 }
 
 .btn-refresh {
+    margin-left: 10px;
     height: 40px;
     width: 40px;
 }
