@@ -5,16 +5,6 @@
   div {
     div {
       padding-top: 10px;
-      &:hover  {
-          color: $white;
-          background-color:$light_grey;
-          transition: 1s;
-          cursor: pointer;
-      }
-      &:hover h3 {
-          color: $white;
-          transition: 1s;
-      }
     }
   }
 }

@@ -20,11 +20,21 @@
     &:hover {
         border: 3px $orange solid;
         background-color: $white;
-        color: $orange   
+        color: $orange; 
+    }
+}
+.btn-grey {
+    background-color: $bg;
+    color: $light_grey;
+    border: 3px $bg solid;
+    &:hover {
+        border: 3px $white solid;
+        background-color: $white;
+        color: $blue; 
     }
 }
 .btn-large {
-    margin: 25px 0;
+    margin: 25px 5px;
     padding: 17px;
 }
 
