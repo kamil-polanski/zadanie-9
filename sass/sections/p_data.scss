@@ -1,0 +1,23 @@
+@import "../variables";
+
+.section-p_data {
+    form {
+        label {
+            padding: 10px 0 3px 0;
+            color: $light_grey;
+            font-weight: bold;
+            @include respond-to("small") {
+                padding: 10px 0;
+            }
+        }
+        input {
+            color: $light_grey;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid;
+            @include respond-to("small") {
+                margin: 10px 0;
+            }
+        }
+    }
+}
