@@ -2,6 +2,7 @@
 @import "mixins";
 @import "utilities/grid";
 @import "components/components";
+@import "components/modal";
 @import "sections/sidebar";
 @import "sections/nav";
 @import "sections/date";
@@ -23,7 +24,7 @@ body {
     padding-bottom: 10px;
 }
 .section-line {
-    border-bottom: solid 1px $bg;
+    border-bottom: solid 2px $bg;
 }
 .section-head {
     padding: 20px 20px;

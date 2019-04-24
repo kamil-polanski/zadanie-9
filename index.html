@@ -61,10 +61,10 @@
         </section>
         <section class="col-s-10 col-xs-12">
             <div class="nav">
-                <div class="nav-padding-quit nav-border">
+                <div class="nav-padding-quit nav-border" id="modal1">
                     <img class="icon nav-icon" src="images/quit.svg" alt="general">
                 </div>
-                <div class="nav-padding nav-person nav-border ">
+                <div class="nav-padding nav-person nav-border" id="modal2">
                     <img class="icon nav-icon" src="images/profile.svg" alt="general">
                     <p>Leonardo DiCaprio</p>
                 </div>
@@ -292,4 +292,36 @@
             </div>
         </section>
     </div>
+        <!-- Modal - quit -->
+    <div id="modalQuit" class="modal">
+        <!-- Modal quit content -->
+        <div class="modal-content">
+            <div class="section-line flex-space">
+                <h2>Do you really want to quit?</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="flex-right">
+                <button class="btn btn-d_grey btn-large">Cancel</button>
+                <button class="btn btn-orange btn-large">Quit</button>
+            </div>
+        </div>
+    </div>
+        <!-- Modal - login -->
+    <div id="modalLogin" class="modal">
+        <!-- Modal login content -->
+        <div class="modal-content">
+            <div class="section-line flex-space">
+                <h2>login</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div>
+                <form class="flex-space">
+                    <input type="login" name="login">
+                    <input type="password" name="rpwd">
+                    <button type="submit" class="btn btn-orange btn-large">Enter</button>
+                </form>
+            </div>
+        </div>
+    </div>    
+    <script src="js/modal.js"></script>
 </body>

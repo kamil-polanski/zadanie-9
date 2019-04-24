@@ -33,6 +33,16 @@
         color: $blue; 
     }
 }
+.btn-d_grey {
+    background-color: $light_grey;
+    color: $white;
+    border: 3px $light_grey solid;
+    &:hover {
+        border: 3px $light_grey solid;
+        background-color: $white;
+        color: $light_grey; 
+    }
+}
 .btn-large {
     margin: 25px 5px;
     padding: 17px;
