@@ -15,7 +15,7 @@ modal1.addEventListener('click', function(){
 
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.querySelector('.close');
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

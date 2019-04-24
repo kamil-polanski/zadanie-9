@@ -12,7 +12,7 @@
         <section class="sidebar col-s-2">
             <div>logo</div>
             <ul class="section-line">
-                <li>
+                <li id="general">
                     <div>
                         <img class="icon sidebar-icon" src="images/general.svg">
                         <p>General</p>
@@ -25,7 +25,7 @@
                     </div>
                 </li>
                 <li>
-                    <div>
+                    <div id="links">
                         <img class="icon sidebar-icon" src="images/links.svg">
                         <p>Links</p>
                     </div>
@@ -36,7 +36,7 @@
                         <p>Banners</p>
                     </div>
                 </li>
-                <li>
+                <li id="personal">
                     <div>
                         <img class="icon sidebar-icon" src="images/Personaldata.svg">
                         <p>Personal data</p>
@@ -77,7 +77,7 @@
                     <img class="icon nav-icon" src="images/arrow-down.svg" alt="general">
                 </div>
             </div>
-            <div class="section row section-shadow">
+            <div class="section row section-shadow x2">
                 <div class="row section-line section-head">
                     <h2>General statistic</h2>
                 </div>
@@ -87,7 +87,7 @@
                         <input class="date-form" type="date" value="1980-08-26">
                         <img class="icon nav-icon" src="images/calendar.svg" alt="general">
                     </div>
-                    <button class="btn btn-refresh"><img class="icon btn-svg-color-white" src="images/refresh.svg" alt="general"></button>
+                    <button class="btn btn-refresh"><img class="icon svg-color-white" src="images/refresh.svg" alt="general"></button>
                 </div>
                 <div class="section-numbers flex-row">
                     <div class="col-s-8 col-xs-8 flex-row flex-space">
@@ -127,7 +127,7 @@
                     </div> 
                 </div>
             </div>
-            <section class="section row ">
+            <section class="section row display">
                 <div class="row section-line section-head">
                     <h2>Links</h2>
                 </div>
@@ -239,7 +239,8 @@
                 </div>
            
         </section>
-        <section class="col-s-12 col-xs-12 section-p_data"> 
+        <!--section personal data -->
+        <section class="col-s-12 col-xs-12 section-p_data display" id="x1"> 
             <div class="row section"> 
                 <div class="row section-head section-line">
                         <h2>personal data</h2>
@@ -324,4 +325,5 @@
         </div>
     </div>    
     <script src="js/modal.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
