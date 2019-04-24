@@ -15,14 +15,6 @@
   align-items: center;
   justify-content: center;
 }
-.flex-space {
-  display: flex;
-  justify-content: space-between;
-}
-.flex-space-a {
-  justify-content: space-around;
-  display: flex;
-}
 
 .row::before,
 .row::after {
