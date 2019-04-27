@@ -3,7 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="tablesaw/tablesaw.stackonly.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
     <?xml version="1.0" standalone="no"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
 </head>
@@ -378,7 +380,54 @@
                         <img class="icon nav-icon" src="images/calendar.svg" alt="general">
                     </div>
                     <button class="btn btn-refresh"><img class="icon svg-color-white" src="images/refresh.svg" alt="general"></button>
-                </div>            
+
+            </div>
+            <div class ="flex-row">
+                <div class="col-xs-8 col-s-8">
+                    <table class="table table-bordered table-hover tablesaw tablesaw-stack component--table" data-tablesaw-mode="stack">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Amount ($)</th>
+                                <th>Deal</th>
+                                <th>Account</th>
+                            </tr>
+                        </thead>    
+                        <tbody>
+                            <tr>
+                                <td>17/08/02(12:58)</td>
+                                <td>34,425.00</td>
+                                <td>cpi(200)</td>
+                                <td>bank</td>
+                            </tr>
+                            <tr>
+                                <td>15/08/02(12:58)</td>
+                                <td>29,436.00</td>
+                                <td>cpi(200)</td>
+                                <td>bank</td>
+                            </tr>
+                            <tr>
+                                <td>17/08/02(12:58)</td>
+                                <td>34,425.00</td>
+                                <td>cpi(200)</td>
+                                <td>bank</td>
+                            </tr>
+                            <tr>
+                                <td>17/08/02(12:58)</td>
+                                <td>34,425.00</td>
+                                <td>cpi(200)</td>
+                                <td>bank</td>
+                            </tr>
+                            <tr>
+                                <td>15/08/02(12:58)</td>
+                                <td>29,436.00</td>
+                                <td>cpi(200)</td>
+                                <td>bank</td>
+                            </tr>                                        
+                        </tbody>
+                    </table>    
+                </div>   
+            </div>   
         </section>
     </div>
         <!-- Modal - quit -->
@@ -414,4 +463,6 @@
     </div>    
     <script src="js/modal.js"></script>
     <script src="js/navigation.js"></script>
+    <script src="js/tablesaw.stackonly.js"></script>
+    <script src="js/tablesaw-init.js"></script>
 </body>
