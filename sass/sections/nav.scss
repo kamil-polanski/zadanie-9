@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../mixins";
 
 .nav {
     display: flex;
@@ -13,6 +14,9 @@
             background-color: $bg;
             cursor: pointer;
         }
+    }
+    @include respond-to("xsmall") {
+        display: none;
     }
 }
 .nav-padding {

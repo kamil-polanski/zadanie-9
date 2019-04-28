@@ -85,9 +85,9 @@
             padding: 25px 0;
             border-bottom: 2px solid #000;
             color: $light_grey;
-            font-size: 12px;
-            @include respond-to("xsmall") {
-                font-size: 10px;
+            font-size: 10px;
+            @include respond-to("small") {
+                font-size: 12px;
             }
         }
     }
@@ -95,12 +95,15 @@
         td{
             padding: 25px 0;
             border-bottom: 2px solid $bg;
-            font-size: 14px;
-            @include respond-to("xsmall"){
-                font-size: 12px;
-            }
+            font-size: 10px;
+            font-weight: bold;
             @include respond-to("small"){
                 font-size: 12px;
+                font-weight: 500;
+            }
+            @include respond-to("large"){
+                font-size: 14px;
+                font-weight: 500;
             }
         }
         tr {
