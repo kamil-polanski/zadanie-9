@@ -12,6 +12,13 @@
     }
 }
 
+.component--fas-white {
+    color: $white;
+    &:hover {
+        color: $light_grey;
+    }
+}
+
 .btn {
     border: none;
     border-radius: 5px;

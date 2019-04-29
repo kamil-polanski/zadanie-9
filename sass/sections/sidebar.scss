@@ -2,10 +2,8 @@
 @import "../mixins";
 .menu {
     padding: 0 10px;
-    img {
-        &:last-of-type {
-            cursor: pointer;
-        }
+    i {
+        cursor: pointer;
     }
 }
 
