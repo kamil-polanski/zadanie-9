@@ -4,16 +4,21 @@ var details = document.querySelector("#details");
 var banners = document.querySelector("#banners");
 var links = document.querySelector("#links");
 var payout = document.querySelector("#payout");
-
+var menu = document.querySelector("#menu");
 var a;
+
+menu.addEventListener('click', function() {
+    document.querySelector('ul').classList.toggle('hide');
+    document.querySelector('.sidebar-2').classList.toggle('hide');
+});
+
 
 function hideSmallMenu() {
     if (window.matchMedia("(max-width: 700px)").matches) {
         document.querySelector('ul').classList.add('hide');
         document.querySelector('.sidebar-2').classList.add('hide');
     } else {
-        document.querySelector('ul').classList.add('show');
-        document.querySelector('.sidebar-2').classList.add('show');
+
     }
 }
 
