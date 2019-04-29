@@ -4,16 +4,19 @@
     height: 15px;
     width: 15px;
 }
+
 .sidebar-icon {
     filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(83%) contrast(86%);
     &li:hover .icon {
         filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(350deg) brightness(106%) contrast(101%);
     }
 }
+
 .btn {
     border: none;
     border-radius: 5px;
 }
+
 .btn-orange {
     background-color: $orange;
     color: $white;
@@ -21,9 +24,10 @@
     &:hover {
         border: 3px $orange solid;
         background-color: $white;
-        color: $orange; 
+        color: $orange;
     }
 }
+
 .btn-grey {
     background-color: $bg;
     color: $light_grey;
@@ -31,9 +35,10 @@
     &:hover {
         border: 3px $bg solid;
         background-color: $white;
-        color: $blue; 
+        color: $blue;
     }
 }
+
 .btn-d_grey {
     background-color: $light_grey;
     color: $white;
@@ -41,9 +46,10 @@
     &:hover {
         border: 3px $light_grey solid;
         background-color: $white;
-        color: $light_grey; 
+        color: $light_grey;
     }
 }
+
 .btn-large {
     margin: 25px 5px;
     padding: 17px;
@@ -56,7 +62,6 @@
     background-color: $orange;
 }
 
-
 //date form 
 .component--date {
     display: flex;
@@ -64,13 +69,15 @@
     align-items: center;
     height: 110px;
 }
+
 .component--date-form {
     border: none;
-    &:last-of-type{
+    &:last-of-type {
         border-left: 1px solid $light_grey;
-        padding-left: 15px; 
+        padding-left: 15px;
     }
 }
+
 .component--date-row {
     border: 1px solid $light_grey;
     border-radius: 5px;
@@ -79,9 +86,10 @@
     align-items: center;
     padding: 0 10px;
 }
+
 .component--table {
-    thead{
-        th{
+    thead {
+        th {
             padding: 25px 0;
             border-bottom: 2px solid #000;
             color: $light_grey;
@@ -91,17 +99,17 @@
             }
         }
     }
-    tbody{
-        td{
+    tbody {
+        td {
             padding: 25px 0;
             border-bottom: 2px solid $bg;
             font-size: 10px;
             font-weight: bold;
-            @include respond-to("small"){
+            @include respond-to("small") {
                 font-size: 12px;
                 font-weight: 500;
             }
-            @include respond-to("large"){
+            @include respond-to("large") {
                 font-size: 14px;
                 font-weight: 500;
             }
@@ -114,4 +122,3 @@
         }
     }
 }
-
