@@ -10,6 +10,11 @@ var a;
 menu.addEventListener('click', function() {
     document.querySelector('ul').classList.toggle('hide');
     document.querySelector('.sidebar-2').classList.toggle('hide');
+    document.querySelector('.main').classList.toggle('col-s-12');
+    document.querySelector('.nav').classList.toggle('fixed-right');
+    document.querySelector('.nav').classList.toggle('col-s-10');
+    document.querySelector('.sidebar').classList.toggle('fixed-left');
+    document.querySelector('.main').classList.toggle('distance-top-45');
 });
 
 

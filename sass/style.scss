@@ -1,35 +1,36 @@
-@import "variables";
-@import "mixins";
-@import "utilities/grid";
-@import "components/components";
-@import "components/modal";
-@import "sections/sidebar";
-@import "sections/nav";
-@import "sections/date";
-@import "sections/numbers";
-@import "sections/links";
-@import "sections/p_data";
-@import "utilities/utilities";
-@import "utilities/flex";
-
-body {
-    margin: 0 auto;
-    background-color: $bg;
-    font-family: $font;
-}
-
-
-.section {
-    margin: 17px;
-    background-color: $white;
-    padding-bottom: 10px;
-}
-.section-line {
-    border-bottom: solid 2px $bg;
-}
-.section-head {
-    padding: 20px 20px;
-}
-
-
-
+    @import "variables";
+    @import "mixins";
+    @import "utilities/grid";
+    @import "components/components";
+    @import "components/modal";
+    @import "sections/sidebar";
+    @import "sections/nav";
+    @import "sections/date";
+    @import "sections/numbers";
+    @import "sections/links";
+    @import "sections/p_data";
+    @import "utilities/utilities";
+    @import "utilities/flex";
+    body {
+        margin: 0 auto;
+        background-color: $bg;
+        font-family: $font;
+    }
+    
+    .section {
+        margin: 17px;
+        background-color: $white;
+        padding-bottom: 10px;
+    }
+    
+    .section-line {
+        border-bottom: solid 2px $bg;
+    }
+    
+    .section-head {
+        padding: 20px 20px;
+        @include respond-to("xsmall") {
+            display: flex;
+            justify-content: right;
+        }
+    }
