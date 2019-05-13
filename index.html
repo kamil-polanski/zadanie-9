@@ -289,23 +289,26 @@
                         <h2>personal data</h2>
                     </div>
                     <div class="flex-row distance-top">
-                        <form action="" method="POST" class="col-xs-8 col-s-8">
+                        <form novalidate action="" method="POST" class="col-xs-8 col-s-8" id="form">
                             <div class="field flex-row">
                                 <label class="col-xs-12 col-s-4">Name</label>
-                                <input type="text" name="name" class="col-xs-12 col-s-8">
+                                <input type="text" name="name" placeholder="name" class="col-xs-12 col-s-8">
+                                <span class="error"></span>
                             </div>
                             <div class="field flex-row">
                                 <label class="col-xs-12 col-s-4">Surename</label>
                                 <input type="text" name="surename" class="col-xs-12 col-s-8">
+                                <span class="error"></span>
                             </div>
                             <div class="field flex-row">
                                 <label class="col-xs-12 col-s-4">E-mail</label>
-                                <input type="email" name="emailaddress" class="col-xs-12 col-s-8">
-
+                                <input type="email" name="email_address" class="col-xs-12 col-s-8">
+                                <span class="error"></span>
                             </div>
                             <div class="field flex-row section-line distance-bottom">
                                 <label class="col-xs-12 col-s-4">Mobile</label>
                                 <input type="tel" name="mobile" class="col-xs-12 col-s-8">
+                                <span class="error"></span>
                             </div>
                             <div class="field flex-row distance-top">
                                 <label class="col-xs-12 col-s-4">Skype</label>
@@ -608,17 +611,19 @@
                 <span class="close">&times;</span>
             </div>
             <div>
+                <!--
                 <form class="flex-space">
                     <input type="login" name="login">
                     <input type="password" name="rpwd">
                     <button type="submit" class="btn btn-orange btn-large">Enter</button>
-                </form>
+                </form>-->
             </div>
         </div>
     </div>
     <script src="js/chart.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/navigation.js"></script>
+    <script src="js/validation.js"></script>
     <script src="vendor/tablesaw.stackonly.js"></script>
     <script src="vendor/tablesaw-init.js"></script>
 </body>
