@@ -10,6 +10,7 @@
 .sidebar {
     background-color: $dark_grey;
     color: $light_grey;
+    position: fixed;
     ul {
         padding: 0;
         li {
