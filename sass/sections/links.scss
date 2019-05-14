@@ -1,5 +1,17 @@
 @import "../variables";
 .links {
+    @include respond-to("xsmall") {
+        padding: 0;
+        div {
+            div {
+                padding: 10px;
+                text-align: center;
+            }
+            img {
+                visibility: visible;
+            }
+        }
+    }
     padding: 20px 0;
     &:hover {
         background-color: $bg;
