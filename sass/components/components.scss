@@ -68,6 +68,13 @@
     height: 40px;
     width: 40px;
     background-color: $orange;
+    &:hover .icon {
+        filter: invert(72%) sepia(36%) saturate(7073%) hue-rotate(348deg) brightness(101%) contrast(92%);
+    }
+    &:hover {
+        background-color: $white;
+        border: 2px $orange solid;
+    }
 }
 
 //date form 
@@ -128,5 +135,15 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+.component--modal-head {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    h2 {
+        display: flex;
+        align-items: center;
     }
 }
