@@ -51,6 +51,15 @@
                 justify-content: center;
                 padding: 5px 0;
                 border-bottom: 1px $orange solid;
+                &:hover {
+                    background-color: $dark_grey;
+                    border-left: none;
+                    color: $light_grey;
+                    cursor: auto;
+                }
+                &:hover .sidebar-icon {
+                    filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(83%) contrast(86%);
+                }
                 &:last-of-type {
                     border-bottom: none;
                 }
