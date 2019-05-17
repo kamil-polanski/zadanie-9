@@ -160,7 +160,7 @@
                 <div class="flex-row">
                     <div class="flex-row col-xs-10 col-s-8 links section-line">
                         <div class="col-xs-10 col-s-10">
-                            <div class="col-xs-12 col-s-4">
+                            <div class="col-xs-12 col-s-4 col-l-6">
                                 <h3>Home page</h3>
                             </div>
                             <div class="col-xs-12 col-s-6"><a href="">http://www.homepage.com</a></div>
@@ -636,7 +636,7 @@
     <div id="modalQuit" class="modal">
         <!-- Modal quit content -->
         <div class="modal-content">
-            <div class="section-line flex-space">
+            <div class="section-line component--modal-head flex-space">
                 <h2>Do you really want to quit?</h2>
                 <span class="close">&times;</span>
             </div>
@@ -650,17 +650,20 @@
     <div id="modalLogin" class="modal">
         <!-- Modal login content -->
         <div class="modal-content">
-            <div class="section-line flex-space">
+            <div class="section-line flex-space component--modal-head">
                 <h2>login</h2>
                 <span class="close">&times;</span>
             </div>
             <div>
-                <!--
-                <form class="flex-space">
-                    <input type="login" name="login">
-                    <input type="password" name="rpwd">
-                    <button type="submit" class="btn btn-orange btn-large">Enter</button>
-                </form>-->
+                <form class="modal-login">
+                    <div class="col-xs-12">
+                        <input placeholder="login name" type="login" name="login">
+                    </div>
+                    <div class="col-xs-12">
+                        <input placeholder="password" type="password" name="rpwd">
+                    </div>
+                    <button type="submit" class="btn btn-orange btn-large col-xs-12">Enter</button>
+                </form>
             </div>
         </div>
     </div>

@@ -19,7 +19,7 @@ menu.addEventListener('click', function() {
 
 
 function hideSmallMenu() {
-    if (window.matchMedia("(max-width: 700px)").matches) {
+    if (window.matchMedia("(max-width: 766px)").matches) {
         document.querySelector('ul').classList.add('hide');
         document.querySelector('.sidebar-2').classList.add('hide');
         document.querySelector('.main').classList.toggle('distance-top-45');
