@@ -39,6 +39,7 @@
         }
     }
     @include respond-to("xsmall") {
+        max-width: 350px;
         display: block;
         position: fixed;
         ul {
