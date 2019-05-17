@@ -9,6 +9,7 @@
 
 .sidebar {
     background-color: $dark_grey;
+    max-width: 212px;
     color: $light_grey;
     position: fixed;
     ul {
