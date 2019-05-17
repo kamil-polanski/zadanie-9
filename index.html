@@ -2,85 +2,87 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>projekt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendor/tablesaw.stackonly.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <?xml version="1.0" standalone="no"?>
-    <?xml-stylesheet type="text/css" href="style.css"?>
+
 </head>
 
 <body>
     <div class="container">
         <section class="sidebar col-s-2 col-xs-6">
             <div class="flex-space-a flex-align-it-cent menu">
-                <img src="images/logo.png">
+                <img src="images/logo.png" alt="logo">
                 <i class="fas fa-bars component--fas-white" id="menu"></i>
             </div>
             <ul class="section-line">
                 <li id="general">
                     <div>
-                        <img class="icon sidebar-icon" src="images/general.svg">
+                        <img class="icon sidebar-icon" src="images/general.svg" alt="img">
                         <p>General</p>
                     </div>
                 </li>
                 <li id="details">
                     <div>
-                        <img class="icon sidebar-icon" src="images/details.svg">
+                        <img class="icon sidebar-icon" src="images/details.svg" alt="img">
                         <p>Details</p>
                     </div>
                 </li>
                 <li id="links">
-                    <div id="links">
-                        <img class="icon sidebar-icon" src="images/links.svg">
+                    <div>
+                        <img class="icon sidebar-icon" src="images/links.svg" alt="img">
                         <p>Links</p>
                     </div>
                 </li>
                 <li id="banners">
                     <div>
-                        <img class="icon sidebar-icon" src="images/banners.svg">
+                        <img class="icon sidebar-icon" src="images/banners.svg" alt="img">
                         <p>Banners</p>
                     </div>
                 </li>
                 <li id="personal">
                     <div>
-                        <img class="icon sidebar-icon" src="images/Personaldata.svg">
+                        <img class="icon sidebar-icon" src="images/Personaldata.svg" alt="img">
                         <p>Personal data</p>
                     </div>
                 </li>
                 <li id="payout">
                     <div>
-                        <img class="icon sidebar-icon" src="images/payout.svg">
+                        <img class="icon sidebar-icon" src="images/payout.svg" alt="img">
                         <p>Payout</p>
                     </div>
                 </li>
                 <li id="postback">
                     <div>
-                        <img class="icon sidebar-icon" src="images/postback.svg">
+                        <img class="icon sidebar-icon" src="images/postback.svg" alt="img">
                         <p>Postback</p>
                     </div>
                 </li>
             </ul>
             <div class="sidebar-2">
                 <h4>Your manager</h4>
-                <div></div>
+                <div>
+                    <p>Michel </p>
+                </div>
                 <ul>
                     <li>
-                        <img class="icon sidebar-icon" src="images/wallet.svg" alt="general">
+                        <img class="icon sidebar-icon" src="images/wallet.svg" alt="wallet">
                         <p>$1500</p>
-                        <img class="icon sidebar-icon" src="images/arrow-down.svg" alt="general">
+                        <img class="icon sidebar-icon" src="images/arrow-down.svg" alt="arrow-down">
                     </li>
                     <li>
-                        <img class="icon sidebar-icon" src="images/notification.svg" alt="general">
+                        <img class="icon sidebar-icon" src="images/notification.svg" alt="notification">
                     </li>
                     <li>
-                        <img class="icon sidebar-icon" src="images/profile.svg" alt="general">
+                        <img class="icon sidebar-icon" src="images/profile.svg" alt="profilel">
                         <p>Leonardo DiCaprio</p>
                     </li>
                     <li>
-                        <img class="icon sidebar-icon" src="images/quit.svg" alt="general">
+                        <img class="icon sidebar-icon" src="images/quit.svg" alt="quit">
                     </li>
                 </ul>
             </div>
@@ -88,19 +90,19 @@
         <section class="col-s-10 col-xs-12 main">
             <div class="nav">
                 <div class="nav-padding-quit nav-border" id="modal1">
-                    <img class="icon nav-icon" src="images/quit.svg" alt="general">
+                    <img class="icon nav-icon" src="images/quit.svg" alt="quit">
                 </div>
                 <div class="nav-padding nav-person nav-border" id="modal2">
-                    <img class="icon nav-icon" src="images/profile.svg" alt="general">
+                    <img class="icon nav-icon" src="images/profile.svg" alt="profile">
                     <p>Leonardo DiCaprio</p>
                 </div>
                 <div class="nav-padding nav-border ">
-                    <img class="icon nav-icon" src="images/notification.svg" alt="general">
+                    <img class="icon nav-icon" src="images/notification.svg" alt="notification">
                 </div>
                 <div class="nav-padding nav-border nav-money">
-                    <img class="icon nav-icon" src="images/wallet.svg" alt="general">
+                    <img class="icon nav-icon" src="images/wallet.svg" alt="wallet">
                     <p>$1500</p>
-                    <img class="icon nav-icon" src="images/arrow-down.svg" alt="general">
+                    <img class="icon nav-icon" src="images/arrow-down.svg" alt="arrow-down">
                 </div>
             </div>
             <!--section general stats-->
@@ -112,9 +114,9 @@
                     <div class="component--date-row">
                         <input class="component--date-form" type="date" value="1980-08-26">
                         <input class="component--date-form" type="date" value="1980-08-26">
-                        <img class="icon nav-icon" src="images/calendar.svg" alt="general">
+                        <img class="icon nav-icon" src="images/calendar.svg" alt="calendar">
                     </div>
-                    <button class="btn btn-refresh"><img class="icon svg-color-white" src="images/refresh.svg" alt="general"></button>
+                    <button class="btn btn-refresh"><img class="icon svg-color-white" src="images/refresh.svg" alt="refresh"></button>
                 </div>
                 <div class="section-numbers flex-row">
                     <div class="col-s-8 col-xs-8 flex-row flex-space">
@@ -166,8 +168,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.homepage.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -180,8 +182,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.currently.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -194,8 +196,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.blurpix.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -208,8 +210,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.yoursite.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -222,8 +224,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.google.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -236,8 +238,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.facebook.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -250,8 +252,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.dashboard.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -264,8 +266,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.blurax.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -278,8 +280,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.pieceofwine.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -292,8 +294,8 @@
                             <div class="col-xs-12 col-s-6"><a href="">http://www.twitter.com</a></div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -312,7 +314,7 @@
                         <form novalidate action="" method="POST" class="col-xs-8 col-s-8" id="form">
                             <div class="field flex-row">
                                 <label class="col-xs-12 col-s-4">Name</label>
-                                <input type="text" name="name" placeholder="name" class="col-xs-12 col-s-8">
+                                <input type="text" name="name" class="col-xs-12 col-s-8">
                                 <span class="error"></span>
                             </div>
                             <div class="field flex-row">
@@ -378,8 +380,8 @@
                             </div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -394,8 +396,8 @@
                             </div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -410,8 +412,8 @@
                             </div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -426,8 +428,8 @@
                             </div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -442,8 +444,8 @@
                             </div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -458,8 +460,8 @@
                             </div>
                         </div>
                         <div class="col-xs-2 col-s-2 flex-space-a">
-                            <img class="icon svg-color-orange" src="images/links.svg">
-                            <img class="icon" src="images/trash.svg">
+                            <img class="icon svg-color-orange" src="images/links.svg" alt="links">
+                            <img class="icon" src="images/trash.svg" alt="trash">
                         </div>
                     </div>
                 </div>
@@ -476,9 +478,9 @@
                     <div class="component--date-row">
                         <input class="component--date-form" type="date" value="1980-08-26">
                         <input class="component--date-form" type="date" value="1980-08-26">
-                        <img class="icon nav-icon" src="images/calendar.svg" alt="general">
+                        <img class="icon nav-icon" src="images/calendar.svg" alt="calendar">
                     </div>
-                    <button class="btn btn-refresh"><img class="icon svg-color-white" src="images/refresh.svg" alt="general"></button>
+                    <button class="btn btn-refresh"><img class="icon svg-color-white" src="images/refresh.svg" alt="refresh"></button>
 
                 </div>
                 <div class="flex-row">
@@ -537,9 +539,9 @@
                     <div class="component--date-row">
                         <input class="component--date-form" type="date" value="1980-08-26">
                         <input class="component--date-form" type="date" value="1980-08-26">
-                        <img class="icon nav-icon" src="images/calendar.svg" alt="general">
+                        <img class="icon nav-icon" src="images/calendar.svg" alt="calendar">
                     </div>
-                    <button class="btn btn-refresh"><img class="icon svg-color-white" src="images/refresh.svg" alt="general"></button>
+                    <button class="btn btn-refresh"><img class="icon svg-color-white" src="images/refresh.svg" alt="refresh"></button>
                 </div>
                 <div class="flex-row">
                     <div class="col-xs-11 col-s-11">
@@ -630,7 +632,7 @@
                     </div>
                 </div>
             </section>
-
+        </section>
     </div>
     <!-- Modal - quit -->
     <div id="modalQuit" class="modal">
@@ -656,10 +658,10 @@
             </div>
             <div>
                 <form class="modal-login">
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 field">
                         <input placeholder="login name" type="login" name="login">
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 field">
                         <input placeholder="password" type="password" name="rpwd">
                     </div>
                     <button type="submit" class="btn btn-orange btn-large col-xs-12">Enter</button>
