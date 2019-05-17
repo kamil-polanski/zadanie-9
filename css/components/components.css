@@ -1,0 +1,75 @@
+h2 { font-size: 20px; text-transform: uppercase; margin: 0; color: #ACACAC; }
+
+h3 { font-size: 20px; font-weight: bold; color: #ACACAC; margin: 0; padding: 0; }
+
+h4 { text-transform: uppercase; }
+
+.section-shadow { box-shadow: 1px 1px 10px #ACACAC; }
+
+p { padding: 0; margin: 0; }
+
+h2 { font-size: 20px; text-transform: uppercase; margin: 0; color: #ACACAC; }
+
+h3 { font-size: 20px; font-weight: bold; color: #ACACAC; margin: 0; padding: 0; }
+
+h4 { text-transform: uppercase; }
+
+.section-shadow { box-shadow: 1px 1px 10px #ACACAC; }
+
+p { padding: 0; margin: 0; }
+
+.icon { height: 15px; width: 15px; }
+
+.sidebar-icon { filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(83%) contrast(86%); }
+
+.sidebar-iconli:hover .icon { filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(83%) contrast(86%); }
+
+.component--fas-white { color: #fff; }
+
+.component--fas-white:hover { color: #ACACAC; }
+
+.btn { border: none; border-radius: 5px; cursor: pointer; }
+
+.btn-orange { background-color: #F58220; color: #fff; border: 3px #F58220 solid; }
+
+.btn-orange:hover { border: 3px #F58220 solid; background-color: #fff; color: #F58220; }
+
+.btn-grey { background-color: #F5F5F2; color: #ACACAC; border: 3px #F5F5F2 solid; }
+
+.btn-grey:hover { border: 3px #F5F5F2 solid; background-color: #fff; color: #56819F; }
+
+.btn-d_grey { background-color: #ACACAC; color: #fff; border: 3px #ACACAC solid; }
+
+.btn-d_grey:hover { border: 3px #ACACAC solid; background-color: #fff; color: #ACACAC; }
+
+.btn-large { margin: 25px 5px; padding: 17px; }
+
+.btn-refresh { margin-left: 10px; height: 40px; width: 40px; background-color: #F58220; }
+
+.btn-refresh:hover .icon { filter: invert(72%) sepia(36%) saturate(7073%) hue-rotate(348deg) brightness(101%) contrast(92%); }
+
+.btn-refresh:hover { background-color: #fff; border: 2px #F58220 solid; }
+
+.component--date { display: flex; justify-content: center; align-items: center; height: 110px; }
+
+.component--date-form { border: none; }
+
+.component--date-form:last-of-type { border-left: 1px solid #ACACAC; padding-left: 15px; }
+
+.component--date-row { border: 1px solid #ACACAC; border-radius: 5px; height: 40px; display: flex; align-items: center; padding: 0 10px; }
+
+.component--table thead th { padding: 25px 0; border-bottom: 2px solid #000; color: #ACACAC; font-size: 10px; }
+
+@media (min-width: 767px) { .component--table thead th { font-size: 12px; } }
+
+.component--table tbody td { padding: 25px 0; border-bottom: 2px solid #F5F5F2; font-size: 10px; font-weight: bold; }
+
+@media (min-width: 767px) { .component--table tbody td { font-size: 12px; font-weight: 500; } }
+
+@media (min-width: 1200px) { .component--table tbody td { font-size: 14px; font-weight: 500; } }
+
+.component--table tbody tr:hover { background-color: #F5F5F2; cursor: pointer; }
+
+.component--modal-head { padding: 10px; display: flex; align-items: center; }
+
+.component--modal-head h2 { display: flex; align-items: center; }

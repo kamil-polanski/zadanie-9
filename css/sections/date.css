@@ -1,0 +1,17 @@
+h2 { font-size: 20px; text-transform: uppercase; margin: 0; color: #ACACAC; }
+
+h3 { font-size: 20px; font-weight: bold; color: #ACACAC; margin: 0; padding: 0; }
+
+h4 { text-transform: uppercase; }
+
+.section-shadow { box-shadow: 1px 1px 10px #ACACAC; }
+
+p { padding: 0; margin: 0; }
+
+.date { display: flex; justify-content: center; align-items: center; height: 110px; }
+
+.date-form { border: none; }
+
+.date-form:last-of-type { border-left: 1px solid #ACACAC; padding-left: 15px; }
+
+.date-row { border: 1px solid #ACACAC; border-radius: 5px; height: 40px; display: flex; align-items: center; padding: 0 10px; }

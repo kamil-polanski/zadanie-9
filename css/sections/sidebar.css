@@ -1,0 +1,57 @@
+h2 { font-size: 20px; text-transform: uppercase; margin: 0; color: #ACACAC; }
+
+h3 { font-size: 20px; font-weight: bold; color: #ACACAC; margin: 0; padding: 0; }
+
+h4 { text-transform: uppercase; }
+
+.section-shadow { box-shadow: 1px 1px 10px #ACACAC; }
+
+p { padding: 0; margin: 0; }
+
+h2 { font-size: 20px; text-transform: uppercase; margin: 0; color: #ACACAC; }
+
+h3 { font-size: 20px; font-weight: bold; color: #ACACAC; margin: 0; padding: 0; }
+
+h4 { text-transform: uppercase; }
+
+.section-shadow { box-shadow: 1px 1px 10px #ACACAC; }
+
+p { padding: 0; margin: 0; }
+
+.menu { padding: 0 10px; }
+
+.menu i { cursor: pointer; }
+
+.sidebar { background-color: #191919; max-width: 212px; color: #ACACAC; position: fixed; }
+
+.sidebar ul { padding: 0; }
+
+.sidebar ul li { display: flex; list-style-type: none; flex-direction: row; padding: 15px 0; }
+
+.sidebar ul li:hover { background-color: #282828; border-left: 5px solid #F58220; color: #fff; cursor: pointer; }
+
+.sidebar ul li:hover .sidebar-icon { filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(350deg) brightness(106%) contrast(101%); }
+
+.sidebar ul li div { padding-left: 15px; display: flex; }
+
+.sidebar ul li div p { margin: 0; padding-left: 5px; flex-direction: row; }
+
+@media (max-width: 766px) { .sidebar { max-width: 350px; display: block; position: fixed; }
+  .sidebar ul { border: #F58220 2px solid; margin: 15px; }
+  .sidebar ul li { display: flex; list-style-type: none; flex-direction: row; justify-content: center; padding: 5px 0; border-bottom: 1px #F58220 solid; }
+  .sidebar ul li:hover { background-color: #191919; border-left: none; color: #ACACAC; cursor: auto; }
+  .sidebar ul li:hover .sidebar-icon { filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(83%) contrast(86%); }
+  .sidebar ul li:last-of-type { border-bottom: none; }
+  .sidebar ul li div { padding-left: 0; } }
+
+.sidebar-2 ul { display: none; }
+
+.sidebar-2 h4 { padding: 15px; margin: 15px 0 0 0; }
+
+.sidebar-2 div { width: 35px; height: 35px; background-color: #fff; border-radius: 50%; margin: 0 0 10px 10px; }
+
+.sidebar-2 div p { padding-top: 5px; margin-left: 45px; }
+
+@media (max-width: 766px) { .sidebar-2 div { display: none; }
+  .sidebar-2 ul { display: block; }
+  .sidebar-2 ul li p { padding: 0 5px; } }

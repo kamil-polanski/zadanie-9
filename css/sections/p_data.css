@@ -1,0 +1,27 @@
+h2 { font-size: 20px; text-transform: uppercase; margin: 0; color: #ACACAC; }
+
+h3 { font-size: 20px; font-weight: bold; color: #ACACAC; margin: 0; padding: 0; }
+
+h4 { text-transform: uppercase; }
+
+.section-shadow { box-shadow: 1px 1px 10px #ACACAC; }
+
+p { padding: 0; margin: 0; }
+
+h2 { font-size: 20px; text-transform: uppercase; margin: 0; color: #ACACAC; }
+
+h3 { font-size: 20px; font-weight: bold; color: #ACACAC; margin: 0; padding: 0; }
+
+h4 { text-transform: uppercase; }
+
+.section-shadow { box-shadow: 1px 1px 10px #ACACAC; }
+
+p { padding: 0; margin: 0; }
+
+.section-p_data form label { padding: 10px 0 3px 0; color: #ACACAC; font-weight: bold; }
+
+@media (min-width: 767px) { .section-p_data form label { padding: 10px 0; } }
+
+.section-p_data form input { color: #ACACAC; padding: 5px; border-radius: 5px; border: 1px solid; }
+
+@media (min-width: 767px) { .section-p_data form input { margin: 10px 0; } }
