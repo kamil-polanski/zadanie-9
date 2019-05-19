@@ -35,3 +35,7 @@ a { text-decoration: none; color: #56819F; }
 .fixed-left { position: fixed; left: 0; }
 
 .error { font-size: 10px; }
+
+.wide { width: 100%; }
+
+.wide-nav { width: 83.33%; }

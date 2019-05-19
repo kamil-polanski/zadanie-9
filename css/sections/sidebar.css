@@ -39,7 +39,7 @@ p { padding: 0; margin: 0; }
 @media (max-width: 766px) { .sidebar { max-width: 350px; display: block; position: fixed; }
   .sidebar ul { border: #F58220 2px solid; margin: 15px; }
   .sidebar ul li { display: flex; list-style-type: none; flex-direction: row; justify-content: center; padding: 5px 0; border-bottom: 1px #F58220 solid; }
-  .sidebar ul li:hover { background-color: #191919; border-left: none; color: #ACACAC; cursor: auto; }
+  .sidebar ul li:hover { background-color: #191919; border-left: none; color: #ACACAC; cursor: none; }
   .sidebar ul li:hover .sidebar-icon { filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(83%) contrast(86%); }
   .sidebar ul li:last-of-type { border-bottom: none; }
   .sidebar ul li div { padding-left: 0; } }
