@@ -1,18 +1,18 @@
-var personal = document.querySelector("#personal");
-var general = document.querySelector("#general");
-var details = document.querySelector("#details");
-var banners = document.querySelector("#banners");
-var links = document.querySelector("#links");
-var payout = document.querySelector("#payout");
-var menu = document.querySelector("#menu");
-var a;
+const personal = document.querySelector("#personal");
+const general = document.querySelector("#general");
+const details = document.querySelector("#details");
+const banners = document.querySelector("#banners");
+const links = document.querySelector("#links");
+const payout = document.querySelector("#payout");
+const menu = document.querySelector("#menu");
+let disp;
 
 menu.addEventListener('click', function() {
     document.querySelector('ul').classList.toggle('hide');
     document.querySelector('.sidebar-2').classList.toggle('hide');
-    document.querySelector('.main').classList.toggle('col-s-12');
+    document.querySelector('.main').classList.toggle('wide');
     document.querySelector('.nav').classList.toggle('fixed-right');
-    document.querySelector('.nav').classList.toggle('col-s-10');
+    document.querySelector('.nav').classList.toggle('wide-nav');
     document.querySelector('.sidebar').classList.toggle('fixed-left');
     document.querySelector('.main').classList.toggle('distance-top-45');
 });
@@ -29,8 +29,8 @@ function hideSmallMenu() {
 }
 
 function display() {
-    a = document.querySelectorAll('.show');
-    for (ele of a) {
+    disp = document.querySelectorAll('.show');
+    for (ele of disp) {
         ele.classList.remove('show');
         ele.classList.add('hide');
     }
