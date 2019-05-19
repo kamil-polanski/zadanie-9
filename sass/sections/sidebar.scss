@@ -57,7 +57,7 @@
                     background-color: $dark_grey;
                     border-left: none;
                     color: $light_grey;
-                    cursor: auto;
+                    cursor: none;
                 }
                 &:hover .sidebar-icon {
                     filter: invert(85%) sepia(0%) saturate(0%) hue-rotate(189deg) brightness(83%) contrast(86%);
